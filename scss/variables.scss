@@ -1,0 +1,61 @@
+//site colors
+$site-black: #121E27;
+$site-white: #f1f1f1;
+$site-red: #D62027;
+
+//site typography
+$site-MedText: Qsand_M;
+$site-BoldText: Qsand_B;
+$site-LightText: Qsand_L;
+$site-RegularText: Qsand_M;
+
+//Button Mixin & Variables:
+// Define common variables for the button
+// $btn-width: 100px;
+// $btn-height: 40px;
+// $btn-border-radius: 5px;
+// $btn-margin: 10px;
+// $btn-bg-color: #fff;
+// $btn-hover-bg-color: #E87379;
+// $site-red: #E74C3C; // Example site red color
+
+// Mixin for the button
+// @mixin project-button {
+//   min-width: $btn-width;
+//   height: $btn-height;
+//   cursor: pointer;
+//   transition: all 0.3s ease;
+//   position: relative;
+//   outline: none;
+//   border-radius: $btn-border-radius;
+//   margin: $btn-margin;
+//   z-index: 0;
+//   background: $btn-bg-color;
+//   overflow: hidden;
+//   background-color: $site-red;
+
+//   &:hover {
+//     color: #fff;
+//   }
+
+//   &:hover:after {
+//     width: 100%;
+//   }
+
+//   &:after {
+//     content: "";
+//     position: absolute;
+//     z-index: -1;
+//     transition: all 0.3s ease;
+//     left: 0;
+//     top: 0;
+//     width: 0;
+//     height: 100%;
+//     background: $btn-hover-bg-color;
+//   }
+// }
+
+// // Usage
+// .projectBtn {
+//   @include project-button;
+// }

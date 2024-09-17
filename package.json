@@ -1,0 +1,19 @@
+{
+  "name": "portfolio_test",
+  "version": "1.0.0",
+  "description": "![Portfolio Landing Page](https://github.com/asankoh/asankoh_portfolio.github.io/blob/main/img/Portfolio_Landing_Page.png?raw=true)",
+  "main": "index.js",
+  "scripts": {
+    "serve": "live-server",
+    "compile-sass": "sass scss/styles.scss css/styles.css -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aos": "^2.3.4"
+  },
+  "devDependencies": {
+    "sass": "^1.78.0"
+  }
+}

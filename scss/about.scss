@@ -1,0 +1,116 @@
+#about{
+    display: grid;
+    grid-template-columns: .50fr 1fr;
+    place-items: center;
+    height: 80%;
+    font-family: Qsand_R;
+    background-color: #f1f1f1;
+
+    .image_grid {
+        // display: grid;
+        // grid-template-columns: 1fr; /* One column for both images */
+        // position: relative; /* So we can offset the images */
+        // width: max-content; /* Adjusts the width to fit the content */
+    
+        // .overlap_image {
+        //     grid-column: 1; /* Both images share the same column */
+        //     position: absolute; /* Allow images to overlap */
+        //     width: 375px; /* Set a size for the images */
+        //     height: 400px;
+        //     border-radius: 15px; /* Optional styling for rounded corners */
+        //     object-fit: cover;
+        //     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        // }
+    
+        // img:nth-child(1) {
+        //     top: 0; /* Position the first image */
+        //     left: 0;
+        //     z-index: 1; /* Make sure the first image is below */
+        // }
+    
+        // img:nth-child(2) {
+        //     top: 300px; /* Adjust the top to overlap */
+        //     left: -75px; /* Offset to the right for overlapping */
+        //     z-index: 2; /* Place the second image above the first */
+        // }
+    }
+    
+
+
+    .aboutContent{ 
+        color: #121E27;
+        max-width: 750px;
+
+        h1{
+            font-family: Qsand_B;
+            width: max-content;
+            background: linear-gradient(
+                to bottom,
+                transparent 60%, 
+                $site-red 80%
+            );
+        }
+
+        
+        p{
+            max-width: 600px;
+            line-height: 35px;
+            overflow: auto;
+        }
+
+        a{
+            i{
+                font-size: 24px;
+                padding-left: 15px;
+                color: #0077b5 ;
+            }
+
+            i:hover{
+                transform: scale(1.1);
+                transition: 1s ease;
+            }
+        }
+    }
+
+    img{
+        max-height: 450px;
+        max-width: 600px;
+        border-radius: 20px;
+    }
+
+}
+
+@media screen and (max-width: 1000px){
+
+    #about{
+        display: block;
+        height: auto;
+
+        img{
+            display: none;
+        }
+        
+        .aboutContent{
+            margin: auto;
+            padding: 15px;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 500px){
+
+    #about{
+        display: block;
+        height: auto;
+        img{
+            display: none;
+        }
+        .aboutContent{
+            width: 350px;
+            font-size: 14px;
+            padding: 5px 15px;
+        }
+    }
+    
+}
