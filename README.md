@@ -1,5 +1,5 @@
 # Personal Portfolio:
-![Portfolio Landing Page](https://github.com/asankoh/asankoh_portfolio.github.io/blob/main/img/Portfolio_Landing_Page.png?raw=true)
+![Portfolio Landing Page](https://github.com/asankoh/asankoh.github.io/blob/main/img/Portfolio_Landing_Page_Two.png?raw=true)
 
 This is my portfolio portraiting the projects that I have completed over my 4 years learning Web Development at Indiana University Indianapolis. This portfolio contains the following coding languages/tools:
 - HTML
@@ -8,4 +8,4 @@ This is my portfolio portraiting the projects that I have completed over my 4 ye
 - JavaScript/jQuery
 
 ## Link to the Portfolio:
-https://asankoh.github.io/asankoh_portfolio.github.io/
+https://asankoh.github.io/
