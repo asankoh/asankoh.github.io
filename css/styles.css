@@ -410,7 +410,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 #about {
   display: grid;
-  grid-template-columns: 0.5fr 1fr;
+  grid-template-columns: 1fr 1fr;
   place-items: center;
   height: 80%;
   font-family: Qsand_R;
@@ -418,7 +418,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 #about .aboutContent {
   color: #121E27;
-  max-width: 750px;
+  max-width: 650px;
 }
 #about .aboutContent h1 {
   font-family: Qsand_B;

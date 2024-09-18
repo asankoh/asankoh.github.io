@@ -1,6 +1,6 @@
 #about{
     display: grid;
-    grid-template-columns: .50fr 1fr;
+    grid-template-columns: 1fr 1fr;
     place-items: center;
     height: 80%;
     font-family: Qsand_R;
@@ -39,7 +39,7 @@
 
     .aboutContent{ 
         color: #121E27;
-        max-width: 750px;
+        max-width: 650px;
 
         h1{
             font-family: Qsand_B;
