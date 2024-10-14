@@ -173,7 +173,7 @@
   animation: colorChange 3s infinite, scaleIcon 3s infinite;
 }
 
-@media only screen and (max-width: 1030px) {
+@media only screen and (max-width: 900px) {
   #cover .container {
     display: grid;
     place-items: center;
@@ -184,7 +184,7 @@
     display: none;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
   #cover .container {
     display: grid;
     place-items: center;
@@ -195,6 +195,9 @@
     font-size: 24px;
     padding: 10px;
   }
+  #cover .container .info .socials i {
+    margin-right: 20px;
+  }
   #cover .container .image_bg {
     display: none;
   }
@@ -203,16 +206,20 @@
   nav .links {
     display: none;
     position: absolute;
-    top: 0;
+    top: -100vh;
     left: 0;
     right: 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: top 2s ease;
-    background-color: #D62027;
+    transition: top 1s ease;
+    background-color: #121E27;
     text-align: center;
     z-index: 1000;
+  }
+  nav .links.active {
+    display: flex;
+    top: 0;
   }
   nav .links a:hover {
     text-decoration: underline;
@@ -261,6 +268,7 @@
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
   font-family: Qsand_R;
+  overflow: hidden;
 }
 #content .project_container .portfolio_content .coming_soon_overlay {
   display: flex;
@@ -288,6 +296,9 @@
   width: 100%;
   min-height: 250px;
   border-radius: 20px 20px 0 0;
+}
+#content .project_container .portfolio_content .html_img {
+  height: 150px;
 }
 #content .project_container .portfolio_content .text {
   padding: 20px;

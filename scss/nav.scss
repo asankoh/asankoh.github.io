@@ -202,7 +202,7 @@
 
 
 
-@media only screen and (max-width: 1030px){
+@media only screen and (max-width: 900px){
     #cover{
         .container{
             display: grid;
@@ -220,7 +220,7 @@
     }
 
     
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 500px){
     #cover{
         .container{
             display: grid;
@@ -231,6 +231,10 @@
             .info{
                 font-size: 24px;
                 padding: 10px;
+
+                .socials i{
+                    margin-right: 20px;
+                }
             }
             .image_bg{
                 display: none;
@@ -249,17 +253,22 @@
      nav .links {
       display: none;
       position: absolute;
-      top: 0;
+      top: -100vh;
       left: 0;
       right: 0;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      transition: top 2s ease;
-      background-color: $site-red;
+      transition: top 1s ease;
+      background-color: $site-black;
       text-align: center;
       z-index: 1000;
     }
+
+    nav .links.active {
+        display: flex;
+        top: 0;
+       }
 
     nav .links a:hover {
        text-decoration: underline;

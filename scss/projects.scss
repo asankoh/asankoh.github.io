@@ -38,6 +38,7 @@
         border-radius: 20px;
         box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px; 
         font-family:Qsand_R;
+        overflow: hidden;
 
         .coming_soon_overlay {
             display: flex;
@@ -68,6 +69,11 @@
                 width: 100%;
                 min-height: 250px;
                 border-radius: 20px 20px 0 0;
+            }
+
+
+            .html_img{
+                height: 150px;
             }
         
 
