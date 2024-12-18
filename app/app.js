@@ -21,6 +21,42 @@ function close(){
   links.style.top = '-100%'
 }
 
+// Javascript Code for Typing Text Title
+window.onload = function() {
+  document.getElementById('loader').style.display = 'none'; // Hide loader after content loads
+};
+
+const roles = ["Web Developer", "Email Developer"];
+let index = 0;
+const roleElement = document.getElementById("role");
+const typingSpeed = 100; // Speed of typing effect
+const pauseDuration = 1500; // Pause before switching roles
+
+function typeOut(text, callback) {
+roleElement.textContent = ""; // Clear the current text
+let i = 0;
+
+const typingInterval = setInterval(() => {
+  if (i < text.length) {
+      roleElement.textContent += text.charAt(i);
+      i++;
+  } else {
+      clearInterval(typingInterval);
+      setTimeout(callback, pauseDuration); // Pause before switching
+  }
+}, typingSpeed);
+}
+
+function changeRole() {
+index = (index + 1) % roles.length; // Cycle through roles
+typeOut(roles[index], changeRole); // Type out the next role
+}
+
+// Start the typing effect
+typeOut(roles[index], changeRole);
+
+
+
 const iconsAndLabels = [
   { icon: 'devicon-html5-plain', label: 'HTML5' },
   { icon: 'devicon-css3-plain', label: 'CSS3' },
