@@ -71,7 +71,7 @@
           </div>
           <div class="aboutContent">
             <h1>About Me:</h1>
-            <p>Hello, my name is Abdul Sankoh and I was born in Fort Sill, Oklahoma but lived in Fishers, Indiana for majority of my life. I have earned myself a bachelor's degree in Media Arts & Science with the specialization in Web Design and Development at Indiana University Indianapolis. My expertise lies in being able to create fully functional and responsive webpages by using HTML, CSS and Javascript. I have a strong understanding of front-end technologies and enjoy continuously expanding my knowledge and improving my coding skills. I am committed to staying updated with the latest advancements in web development and best practices. In my free time, I enjoy watching the Premier League (Chelsea Fan!) &#9917;, playing on the piano  &#127929; and working on my fitness &#127947;! <br>
+            <p>My name is Abdul Sankoh and I am a Web Developer/Email Developer! I have earned myself a bachelor's degree in Media Arts & Science with the specialization in Web Design and Development at Indiana University Indianapolis. I am extremely passionate about web development because it requires strong problem-solving abilities to create effcient, functional coding solutions. I see the process of web development as one huge puzzle, where every function and variable plays a crucial role in the final outcome.  My expertise lies in being able to create fully functional and responsive webpages by using HTML, CSS and Javascript. I have a strong understanding of front-end technologies and enjoy continuously expanding my knowledge and improving my coding skills as there is always more to learn! In my free time, I enjoy watching the Premier League (Chelsea Fan!) &#9917;, playing on the piano  &#127929; and working on my fitness &#127947;! <br>
             <b>Check out my LinkedIn!</b>             <a href="https://www.linkedin.com/in/abdul-sankoh-kh2" target="_blank"> 
               <i class="fa-brands fa-linkedin"></i>
               </a>
@@ -94,6 +94,11 @@
           <div class="header">
             <h1>Projects:</h1>
             <p>Here is a few examples of my work: </p>
+            <div class="filter-container">
+                <button onclick="filterProjects('all')">All</button>
+                <button onclick="filterProjects('web')">Web Development</button>
+                <button onclick="filterProjects('email')">Email Development</button>
+            </div>
           </div>
 
           <div class="project_container">
@@ -101,7 +106,7 @@
             <img src="img/Jagathon_Thumbnail.png" alt="Jagathon 2023 Revamp Project">
             <div class="text">
               <h3>IUPUI's Jagathon Revamp Project</h3>
-              <!-- <p>This Jagathon Site project involved collaborating with a client to achieve their goals through IU's <b>WCMS</b>, including tasks like creating new banner images, incorporating active links with sponsor logos and much more! <span style="display: block;">(Credit to Partner: Logan Douglass)</span></p> -->
+              <!-- <p>This Jagathon Site project involved collaborating with a client to achieve their goals through IU's <b>WCMS</b>, including tasks like creating new banner images, incorporating active links with sponsor logos and much more!-->
               <p class="project_desc">This Jagathon project involved collaborating with a client to achieve their goals in creating new banner images, incorporating active links with sponsor logos and revising outdated content to help the organization raise money for Riley's Children Hospital! This application was revised through the use of IU's <b>WCMS</b>.</p>
               <div class="btnGroup">
                   <a href="https://studentaffairs.indianapolis.iu.edu/get-involved/jagathon/index.html" target="_blank">
@@ -133,7 +138,7 @@
             <img src="img/jungle_cook.png" alt="Jungle Cook Recipe Website Project">
           </div>
             <div class="text">
-              <h3>Jungle Cook | Recipe CRUD Applcation</h3>
+              <h3>Jungle Cook | Recipe CRUD Application</h3>
               <p class="project_desc">Jungle Cook is a CRUD recipe application that allows users to discover new recipes on the application as well as create their own recipes. This application provides database intergation and a login system allowing for users to save recipes on their account. This was done using <b>HTML, SASS ,JavaScript, jQuery and Firebase</b>. </p>
               <div class="btnGroup">
                   <a href="https://jungle-cook-ff7.web.app/" target="_blank">
@@ -283,6 +288,25 @@
 
     </div>
       </div>
+
+      <script>
+        function filterProjects(filter) {
+          const projects = document.querySelectorAll('.portfolio_content');
+          const webKeywords = ['Application', 'OSLIN', 'Jagathon'];
+
+          projects.forEach(project => {
+            if (filter === 'all') {
+              project.style.display = 'block';
+            } else if (filter === 'web' && webKeywords.some(word => project.querySelector('h3').textContent.includes(word))) {
+              project.style.display = 'block';
+            } else if (filter === 'email' && project.querySelector('h3').textContent.includes('Email')) {
+              project.style.display = 'block';
+            } else {
+              project.style.display = 'none';
+            }
+          });
+        }
+      </script>
 
 
     <footer>
